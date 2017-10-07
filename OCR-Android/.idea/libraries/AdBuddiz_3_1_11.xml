@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AdBuddiz-3.1.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-ocr-master/android/libs/AdBuddiz-3.1.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

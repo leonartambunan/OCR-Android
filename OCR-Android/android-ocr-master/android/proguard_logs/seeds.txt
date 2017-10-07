@@ -1,0 +1,400 @@
+com.googlecode.leptonica.android.AdaptiveMap
+com.googlecode.leptonica.android.AdaptiveMap: long nativeBackgroundNormMorph(long,int,int,int)
+com.googlecode.leptonica.android.AdaptiveMap: long nativePixContrastNorm(long,int,int,int,int,int)
+com.googlecode.leptonica.android.Binarize
+com.googlecode.leptonica.android.Binarize: long nativeOtsuAdaptiveThreshold(long,int,int,int,int,float)
+com.googlecode.leptonica.android.Binarize: long nativeSauvolaBinarizeTiled(long,int,float,int,int)
+com.googlecode.leptonica.android.Box
+com.googlecode.leptonica.android.Box: long nativeCreate(int,int,int,int)
+com.googlecode.leptonica.android.Box: int nativeGetX(long)
+com.googlecode.leptonica.android.Box: int nativeGetY(long)
+com.googlecode.leptonica.android.Box: int nativeGetWidth(long)
+com.googlecode.leptonica.android.Box: int nativeGetHeight(long)
+com.googlecode.leptonica.android.Box: void nativeDestroy(long)
+com.googlecode.leptonica.android.Box: boolean nativeGetGeometry(long,int[])
+com.googlecode.leptonica.android.Boxa
+com.googlecode.leptonica.android.Boxa: void nativeDestroy(long)
+com.googlecode.leptonica.android.Boxa: boolean nativeGetGeometry(long,int,int[])
+com.googlecode.leptonica.android.Boxa: int nativeGetCount(long)
+com.googlecode.leptonica.android.Clip
+com.googlecode.leptonica.android.Clip: int nativeClipRectangle(long,long)
+com.googlecode.leptonica.android.Constants
+com.googlecode.leptonica.android.Convert
+com.googlecode.leptonica.android.Convert: long nativeConvertTo8(long)
+com.googlecode.leptonica.android.Edge
+com.googlecode.leptonica.android.Edge: long nativePixSobelEdgeFilter(long,int)
+com.googlecode.leptonica.android.Enhance
+com.googlecode.leptonica.android.Enhance: long nativeUnsharpMasking(long,int,float)
+com.googlecode.leptonica.android.GrayQuant
+com.googlecode.leptonica.android.GrayQuant: long nativePixThresholdToBinary(long,int)
+com.googlecode.leptonica.android.JpegIO
+com.googlecode.leptonica.android.JpegIO: byte[] nativeCompressToJpeg(long,int,boolean)
+com.googlecode.leptonica.android.MorphApp
+com.googlecode.leptonica.android.MorphApp: long nativePixTophat(long,int,int,int)
+com.googlecode.leptonica.android.MorphApp: long nativePixFastTophat(long,int,int,int)
+com.googlecode.leptonica.android.Pix
+com.googlecode.leptonica.android.Pix: int nativeGetRefCount(long)
+com.googlecode.leptonica.android.Pix: long nativeCreatePix(int,int,int)
+com.googlecode.leptonica.android.Pix: long nativeCreateFromData(byte[],int,int,int)
+com.googlecode.leptonica.android.Pix: byte[] nativeGetData(long)
+com.googlecode.leptonica.android.Pix: long nativeClone(long)
+com.googlecode.leptonica.android.Pix: long nativeCopy(long)
+com.googlecode.leptonica.android.Pix: boolean nativeInvert(long)
+com.googlecode.leptonica.android.Pix: void nativeDestroy(long)
+com.googlecode.leptonica.android.Pix: boolean nativeGetDimensions(long,int[])
+com.googlecode.leptonica.android.Pix: int nativeGetWidth(long)
+com.googlecode.leptonica.android.Pix: int nativeGetHeight(long)
+com.googlecode.leptonica.android.Pix: int nativeGetDepth(long)
+com.googlecode.leptonica.android.Pix: int nativeGetPixel(long,int,int)
+com.googlecode.leptonica.android.Pix: void nativeSetPixel(long,int,int,int)
+com.googlecode.leptonica.android.Pixa
+com.googlecode.leptonica.android.Pixa: int nativeCreate(int)
+com.googlecode.leptonica.android.Pixa: int nativeCopy(long)
+com.googlecode.leptonica.android.Pixa: int nativeSort(long,int,int)
+com.googlecode.leptonica.android.Pixa: boolean nativeJoin(long,long)
+com.googlecode.leptonica.android.Pixa: int nativeGetCount(long)
+com.googlecode.leptonica.android.Pixa: void nativeDestroy(long)
+com.googlecode.leptonica.android.Pixa: void nativeAddPix(long,long,int)
+com.googlecode.leptonica.android.Pixa: void nativeAddBox(long,long,int)
+com.googlecode.leptonica.android.Pixa: void nativeAdd(long,long,long,int)
+com.googlecode.leptonica.android.Pixa: boolean nativeWriteToFileRandomCmap(long,java.lang.String,int,int)
+com.googlecode.leptonica.android.Pixa: void nativeReplacePix(long,int,long,long)
+com.googlecode.leptonica.android.Pixa: void nativeMergeAndReplacePix(long,int,int)
+com.googlecode.leptonica.android.Pixa: long nativeGetBox(long,int)
+com.googlecode.leptonica.android.Pixa: long nativeGetPix(long,int)
+com.googlecode.leptonica.android.Pixa: boolean nativeGetBoxGeometry(long,int,int[])
+com.googlecode.leptonica.android.ReadFile
+com.googlecode.leptonica.android.ReadFile: long nativeReadMem(byte[],int)
+com.googlecode.leptonica.android.ReadFile: long nativeReadBytes8(byte[],int,int)
+com.googlecode.leptonica.android.ReadFile: boolean nativeReplaceBytes8(long,byte[],int,int)
+com.googlecode.leptonica.android.ReadFile: long nativeReadFile(java.lang.String)
+com.googlecode.leptonica.android.ReadFile: long nativeReadBitmap(android.graphics.Bitmap)
+com.googlecode.leptonica.android.Rotate
+com.googlecode.leptonica.android.Rotate: int nativeRotateOrth(long,int)
+com.googlecode.leptonica.android.Rotate: long nativeRotate(long,float,boolean,boolean)
+com.googlecode.leptonica.android.Scale
+com.googlecode.leptonica.android.Scale: long nativeScale(long,float,float)
+com.googlecode.leptonica.android.Scale: long nativeScaleGeneral(long,float,float,float,int)
+com.googlecode.leptonica.android.Scale$ScaleType
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType[] $VALUES
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType[] values()
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType valueOf(java.lang.String)
+com.googlecode.leptonica.android.Scale$ScaleType: Scale$ScaleType(java.lang.String,int)
+com.googlecode.leptonica.android.Skew
+com.googlecode.leptonica.android.Skew: float nativeFindSkew(long,float,float,int,int,float)
+com.googlecode.leptonica.android.WriteFile
+com.googlecode.leptonica.android.WriteFile: int nativeWriteBytes8(long,byte[])
+com.googlecode.leptonica.android.WriteFile: boolean nativeWriteImpliedFormat(long,java.lang.String)
+com.googlecode.leptonica.android.WriteFile: boolean nativeWriteBitmap(long,android.graphics.Bitmap)
+com.googlecode.tesseract.android.BuildConfig
+com.googlecode.tesseract.android.PageIterator
+com.googlecode.tesseract.android.PageIterator: void nativeBegin(long)
+com.googlecode.tesseract.android.PageIterator: boolean nativeNext(long,int)
+com.googlecode.tesseract.android.PageIterator: int[] nativeBoundingBox(long,int)
+com.googlecode.tesseract.android.R
+com.googlecode.tesseract.android.R$array
+com.googlecode.tesseract.android.R$array: int capturemodes
+com.googlecode.tesseract.android.R$attr
+com.googlecode.tesseract.android.R$color
+com.googlecode.tesseract.android.R$color: int help_button_view
+com.googlecode.tesseract.android.R$color: int help_view
+com.googlecode.tesseract.android.R$color: int result_minor_text
+com.googlecode.tesseract.android.R$color: int result_text
+com.googlecode.tesseract.android.R$color: int result_view
+com.googlecode.tesseract.android.R$color: int status_text
+com.googlecode.tesseract.android.R$color: int status_top_text_background
+com.googlecode.tesseract.android.R$color: int translation_text
+com.googlecode.tesseract.android.R$color: int viewfinder_corners
+com.googlecode.tesseract.android.R$color: int viewfinder_frame
+com.googlecode.tesseract.android.R$color: int viewfinder_mask
+com.googlecode.tesseract.android.R$drawable
+com.googlecode.tesseract.android.R$drawable: int background
+com.googlecode.tesseract.android.R$drawable: int background_pressed
+com.googlecode.tesseract.android.R$drawable: int ic_launcher
+com.googlecode.tesseract.android.R$drawable: int shutter
+com.googlecode.tesseract.android.R$drawable: int shutter_button
+com.googlecode.tesseract.android.R$drawable: int shutter_pressed
+com.googlecode.tesseract.android.R$id
+com.googlecode.tesseract.android.R$id: int CAMERA_ZOOM_CONTROLS
+com.googlecode.tesseract.android.R$id: int camera_button_view
+com.googlecode.tesseract.android.R$id: int cbTouchedImage
+com.googlecode.tesseract.android.R$id: int decode
+com.googlecode.tesseract.android.R$id: int decode_failed
+com.googlecode.tesseract.android.R$id: int decode_succeeded
+com.googlecode.tesseract.android.R$id: int image_view
+com.googlecode.tesseract.android.R$id: int indeterminate_progress_indicator_view
+com.googlecode.tesseract.android.R$id: int ocr_continuous_decode
+com.googlecode.tesseract.android.R$id: int ocr_continuous_decode_failed
+com.googlecode.tesseract.android.R$id: int ocr_continuous_decode_succeeded
+com.googlecode.tesseract.android.R$id: int ocr_decode
+com.googlecode.tesseract.android.R$id: int ocr_decode_failed
+com.googlecode.tesseract.android.R$id: int ocr_decode_succeeded
+com.googlecode.tesseract.android.R$id: int ocr_result_text_view
+com.googlecode.tesseract.android.R$id: int preview_view
+com.googlecode.tesseract.android.R$id: int quit
+com.googlecode.tesseract.android.R$id: int restart_preview
+com.googlecode.tesseract.android.R$id: int result_view
+com.googlecode.tesseract.android.R$id: int seekBar
+com.googlecode.tesseract.android.R$id: int shutter_button
+com.googlecode.tesseract.android.R$id: int status_view_bottom
+com.googlecode.tesseract.android.R$id: int surface_camera
+com.googlecode.tesseract.android.R$id: int text1
+com.googlecode.tesseract.android.R$id: int viewfinder_view
+com.googlecode.tesseract.android.R$layout
+com.googlecode.tesseract.android.R$layout: int capture
+com.googlecode.tesseract.android.R$layout: int list_item
+com.googlecode.tesseract.android.R$raw
+com.googlecode.tesseract.android.R$raw: int beep
+com.googlecode.tesseract.android.R$raw: int kabupaten
+com.googlecode.tesseract.android.R$raw: int kecamatan
+com.googlecode.tesseract.android.R$raw: int provinsi
+com.googlecode.tesseract.android.R$string
+com.googlecode.tesseract.android.R$string: int app_name
+com.googlecode.tesseract.android.R$string: int ocr_reads_no_valid_data
+com.googlecode.tesseract.android.R$string: int touched_image_shown
+com.googlecode.tesseract.android.R$string: int waiting_ocr_reading
+com.googlecode.tesseract.android.R$styleable
+com.googlecode.tesseract.android.R$styleable: int[] ViewfinderView
+com.googlecode.tesseract.android.R$xml
+com.googlecode.tesseract.android.R$xml: int preferences
+com.googlecode.tesseract.android.ResultIterator
+com.googlecode.tesseract.android.ResultIterator: java.lang.String[] nativeGetChoices(long,int)
+com.googlecode.tesseract.android.ResultIterator: java.lang.String nativeGetUTF8Text(long,int)
+com.googlecode.tesseract.android.ResultIterator: float nativeConfidence(long,int)
+com.googlecode.tesseract.android.ResultIterator: void nativeDelete(long)
+com.googlecode.tesseract.android.TessBaseAPI
+com.googlecode.tesseract.android.TessBaseAPI: long mNativeData
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String VAR_CHAR_WHITELIST
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String VAR_CHAR_BLACKLIST
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String VAR_SAVE_BLOB_CHOICES
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String VAR_TRUE
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String VAR_FALSE
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_TESSERACT_ONLY
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_CUBE_ONLY
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_TESSERACT_CUBE_COMBINED
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_DEFAULT
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.tesseract.android.TessBaseAPI$ProgressNotifier progressNotifier
+com.googlecode.tesseract.android.TessBaseAPI: boolean mRecycled
+com.googlecode.tesseract.android.TessBaseAPI: TessBaseAPI()
+com.googlecode.tesseract.android.TessBaseAPI: TessBaseAPI(com.googlecode.tesseract.android.TessBaseAPI$ProgressNotifier)
+com.googlecode.tesseract.android.TessBaseAPI: boolean init(java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: boolean init(java.lang.String,java.lang.String,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String getInitLanguagesAsString()
+com.googlecode.tesseract.android.TessBaseAPI: void clear()
+com.googlecode.tesseract.android.TessBaseAPI: void end()
+com.googlecode.tesseract.android.TessBaseAPI: boolean setVariable(java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: int getPageSegMode()
+com.googlecode.tesseract.android.TessBaseAPI: void setPageSegMode(int)
+com.googlecode.tesseract.android.TessBaseAPI: void setDebug(boolean)
+com.googlecode.tesseract.android.TessBaseAPI: void setRectangle(android.graphics.Rect)
+com.googlecode.tesseract.android.TessBaseAPI: void setRectangle(int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(java.io.File)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(android.graphics.Bitmap)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(com.googlecode.leptonica.android.Pix)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(byte[],int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String getUTF8Text()
+com.googlecode.tesseract.android.TessBaseAPI: int meanConfidence()
+com.googlecode.tesseract.android.TessBaseAPI: int[] wordConfidences()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pix getThresholdedImage()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getRegions()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getTextlines()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getStrips()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getWords()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getConnectedComponents()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.tesseract.android.ResultIterator getResultIterator()
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String getHOCRText(int)
+com.googlecode.tesseract.android.TessBaseAPI: void setInputName(java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: void setOutputName(java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: void readConfigFile(java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String getBoxText(int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String getVersion()
+com.googlecode.tesseract.android.TessBaseAPI: void stop()
+com.googlecode.tesseract.android.TessBaseAPI: void onProgressValues(int,int,int,int,int,int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: boolean beginDocument(com.googlecode.tesseract.android.TessPdfRenderer,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: boolean beginDocument(com.googlecode.tesseract.android.TessPdfRenderer)
+com.googlecode.tesseract.android.TessBaseAPI: boolean endDocument(com.googlecode.tesseract.android.TessPdfRenderer)
+com.googlecode.tesseract.android.TessBaseAPI: boolean addPageToDocument(com.googlecode.leptonica.android.Pix,java.lang.String,com.googlecode.tesseract.android.TessPdfRenderer)
+com.googlecode.tesseract.android.TessBaseAPI: long getNativeData()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeClassInit()
+com.googlecode.tesseract.android.TessBaseAPI: long nativeConstruct()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeEnd(long)
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeInit(long,java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeInitOem(long,java.lang.String,java.lang.String,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String nativeGetInitLanguagesAsString(long)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeClear(long)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetImageBytes(long,byte[],int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetImagePix(long,long)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetRectangle(long,int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String nativeGetUTF8Text(long)
+com.googlecode.tesseract.android.TessBaseAPI: int nativeMeanConfidence(long)
+com.googlecode.tesseract.android.TessBaseAPI: int[] nativeWordConfidences(long)
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeSetVariable(long,java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetDebug(long,boolean)
+com.googlecode.tesseract.android.TessBaseAPI: int nativeGetPageSegMode(long)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetPageSegMode(long,int)
+com.googlecode.tesseract.android.TessBaseAPI: long nativeGetThresholdedImage(long)
+com.googlecode.tesseract.android.TessBaseAPI: long nativeGetRegions(long)
+com.googlecode.tesseract.android.TessBaseAPI: long nativeGetTextlines(long)
+com.googlecode.tesseract.android.TessBaseAPI: long nativeGetStrips(long)
+com.googlecode.tesseract.android.TessBaseAPI: long nativeGetWords(long)
+com.googlecode.tesseract.android.TessBaseAPI: long nativeGetConnectedComponents(long)
+com.googlecode.tesseract.android.TessBaseAPI: long nativeGetResultIterator(long)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String nativeGetBoxText(long,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String nativeGetHOCRText(long,int)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetInputName(long,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetOutputName(long,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeReadConfigFile(long,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String nativeGetVersion(long)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeStop(long)
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeBeginDocument(long,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeEndDocument(long)
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeAddPageToDocument(long,long,java.lang.String,long)
+com.googlecode.tesseract.android.TessBaseAPI: void <clinit>()
+com.googlecode.tesseract.android.TessBaseAPI$PageIteratorLevel
+com.googlecode.tesseract.android.TessBaseAPI$PageSegMode
+com.googlecode.tesseract.android.TessBaseAPI$ProgressNotifier
+com.googlecode.tesseract.android.TessBaseAPI$ProgressValues
+com.googlecode.tesseract.android.TessPdfRenderer
+com.googlecode.tesseract.android.TessPdfRenderer: long nativeCreate(long,java.lang.String)
+com.googlecode.tesseract.android.TessPdfRenderer: void nativeRecycle(long)
+com.nio.ocr.ektp.mobile.CaptureActivity
+com.nio.ocr.ektp.mobile.CaptureActivity: CaptureActivity()
+com.nio.ocr.ektp.mobile.CaptureActivityHandler$State: com.nio.ocr.ektp.mobile.CaptureActivityHandler$State[] $VALUES
+com.nio.ocr.ektp.mobile.CaptureActivityHandler$State: com.nio.ocr.ektp.mobile.CaptureActivityHandler$State[] values()
+com.nio.ocr.ektp.mobile.CaptureActivityHandler$State: com.nio.ocr.ektp.mobile.CaptureActivityHandler$State valueOf(java.lang.String)
+com.nio.ocr.ektp.mobile.CaptureActivityHandler$State: CaptureActivityHandler$State(java.lang.String,int)
+com.nio.ocr.ektp.mobile.PreferencesActivity
+com.nio.ocr.ektp.mobile.PreferencesActivity: PreferencesActivity()
+com.nio.ocr.ektp.mobile.R$array: int capturemodes
+com.nio.ocr.ektp.mobile.R$color: int help_button_view
+com.nio.ocr.ektp.mobile.R$color: int help_view
+com.nio.ocr.ektp.mobile.R$color: int result_minor_text
+com.nio.ocr.ektp.mobile.R$color: int result_text
+com.nio.ocr.ektp.mobile.R$color: int result_view
+com.nio.ocr.ektp.mobile.R$color: int status_text
+com.nio.ocr.ektp.mobile.R$color: int status_top_text_background
+com.nio.ocr.ektp.mobile.R$color: int translation_text
+com.nio.ocr.ektp.mobile.R$color: int viewfinder_corners
+com.nio.ocr.ektp.mobile.R$color: int viewfinder_frame
+com.nio.ocr.ektp.mobile.R$color: int viewfinder_mask
+com.nio.ocr.ektp.mobile.R$drawable: int background
+com.nio.ocr.ektp.mobile.R$drawable: int background_pressed
+com.nio.ocr.ektp.mobile.R$drawable: int ic_launcher
+com.nio.ocr.ektp.mobile.R$drawable: int shutter
+com.nio.ocr.ektp.mobile.R$drawable: int shutter_button
+com.nio.ocr.ektp.mobile.R$drawable: int shutter_pressed
+com.nio.ocr.ektp.mobile.R$id: int CAMERA_ZOOM_CONTROLS
+com.nio.ocr.ektp.mobile.R$id: int camera_button_view
+com.nio.ocr.ektp.mobile.R$id: int cbTouchedImage
+com.nio.ocr.ektp.mobile.R$id: int decode
+com.nio.ocr.ektp.mobile.R$id: int decode_failed
+com.nio.ocr.ektp.mobile.R$id: int decode_succeeded
+com.nio.ocr.ektp.mobile.R$id: int image_view
+com.nio.ocr.ektp.mobile.R$id: int indeterminate_progress_indicator_view
+com.nio.ocr.ektp.mobile.R$id: int ocr_continuous_decode
+com.nio.ocr.ektp.mobile.R$id: int ocr_continuous_decode_failed
+com.nio.ocr.ektp.mobile.R$id: int ocr_continuous_decode_succeeded
+com.nio.ocr.ektp.mobile.R$id: int ocr_decode
+com.nio.ocr.ektp.mobile.R$id: int ocr_decode_failed
+com.nio.ocr.ektp.mobile.R$id: int ocr_decode_succeeded
+com.nio.ocr.ektp.mobile.R$id: int ocr_result_text_view
+com.nio.ocr.ektp.mobile.R$id: int preview_view
+com.nio.ocr.ektp.mobile.R$id: int quit
+com.nio.ocr.ektp.mobile.R$id: int restart_preview
+com.nio.ocr.ektp.mobile.R$id: int result_view
+com.nio.ocr.ektp.mobile.R$id: int seekBar
+com.nio.ocr.ektp.mobile.R$id: int shutter_button
+com.nio.ocr.ektp.mobile.R$id: int status_view_bottom
+com.nio.ocr.ektp.mobile.R$id: int surface_camera
+com.nio.ocr.ektp.mobile.R$id: int text1
+com.nio.ocr.ektp.mobile.R$id: int viewfinder_view
+com.nio.ocr.ektp.mobile.R$layout: int capture
+com.nio.ocr.ektp.mobile.R$layout: int list_item
+com.nio.ocr.ektp.mobile.R$raw: int beep
+com.nio.ocr.ektp.mobile.R$raw: int kabupaten
+com.nio.ocr.ektp.mobile.R$raw: int kecamatan
+com.nio.ocr.ektp.mobile.R$raw: int provinsi
+com.nio.ocr.ektp.mobile.R$string: int app_name
+com.nio.ocr.ektp.mobile.R$string: int ocr_reads_no_valid_data
+com.nio.ocr.ektp.mobile.R$string: int touched_image_shown
+com.nio.ocr.ektp.mobile.R$string: int waiting_ocr_reading
+com.nio.ocr.ektp.mobile.R$styleable: int[] ViewfinderView
+com.nio.ocr.ektp.mobile.R$xml: int preferences
+com.nio.ocr.ektp.mobile.ViewfinderView
+com.nio.ocr.ektp.mobile.ViewfinderView: ViewfinderView(android.content.Context,android.util.AttributeSet)
+com.nio.ocr.ektp.mobile.ViewfinderView: void setCameraManager(com.nio.ocr.ektp.mobile.camera.CameraManager)
+com.nio.ocr.ektp.mobile.camera.ShutterButton
+com.nio.ocr.ektp.mobile.camera.ShutterButton: ShutterButton(android.content.Context)
+com.nio.ocr.ektp.mobile.camera.ShutterButton: ShutterButton(android.content.Context,android.util.AttributeSet)
+com.nio.ocr.ektp.mobile.camera.ShutterButton: ShutterButton(android.content.Context,android.util.AttributeSet,int)
+com.nio.ocr.ektp.mobile.camera.ShutterButton: void setOnShutterButtonListener(com.nio.ocr.ektp.mobile.camera.ShutterButton$OnShutterButtonListener)
+com.purplebrain.adbuddiz.sdk.AdBuddizActivity
+com.purplebrain.adbuddiz.sdk.AdBuddizError: java.lang.String name
+com.purplebrain.adbuddiz.sdk.AdBuddizError: com.purplebrain.adbuddiz.sdk.AdBuddizError[] $VALUES
+com.purplebrain.adbuddiz.sdk.AdBuddizError: com.purplebrain.adbuddiz.sdk.AdBuddizError[] values()
+com.purplebrain.adbuddiz.sdk.AdBuddizError: com.purplebrain.adbuddiz.sdk.AdBuddizError valueOf(java.lang.String)
+com.purplebrain.adbuddiz.sdk.AdBuddizError: AdBuddizError(java.lang.String,int,java.lang.String)
+com.purplebrain.adbuddiz.sdk.AdBuddizError: java.lang.String getName()
+com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel: com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel[] $VALUES
+com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel: com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel[] values()
+com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel: com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel valueOf(java.lang.String)
+com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel: AdBuddizLogLevel(java.lang.String,int)
+com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError: java.lang.String name
+com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError: com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError[] $VALUES
+com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError: com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError[] values()
+com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError: com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError valueOf(java.lang.String)
+com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError: AdBuddizRewardedVideoError(java.lang.String,int,java.lang.String)
+com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError: java.lang.String getName()
+com.purplebrain.adbuddiz.sdk.d.a
+com.purplebrain.adbuddiz.sdk.d.a: a(android.content.Context)
+com.purplebrain.adbuddiz.sdk.d.b
+com.purplebrain.adbuddiz.sdk.d.b: b(android.content.Context)
+com.purplebrain.adbuddiz.sdk.f.a: com.purplebrain.adbuddiz.sdk.f.a[] g
+com.purplebrain.adbuddiz.sdk.f.a: a(java.lang.String,int,int)
+com.purplebrain.adbuddiz.sdk.f.a.a.d: com.purplebrain.adbuddiz.sdk.f.a.a.d[] f
+com.purplebrain.adbuddiz.sdk.f.a.a.d: d(java.lang.String,int,java.lang.String,boolean)
+com.purplebrain.adbuddiz.sdk.f.a.d: java.lang.String h
+com.purplebrain.adbuddiz.sdk.f.a.d: com.purplebrain.adbuddiz.sdk.f.a.d[] i
+com.purplebrain.adbuddiz.sdk.f.a.d: d(java.lang.String,int,java.lang.String,com.purplebrain.adbuddiz.sdk.e.a.b.c,com.purplebrain.adbuddiz.sdk.f.a.a.d,boolean)
+com.purplebrain.adbuddiz.sdk.f.a.e: com.purplebrain.adbuddiz.sdk.f.a.e[] g
+com.purplebrain.adbuddiz.sdk.f.a.e: e(java.lang.String,int,java.lang.String,java.lang.String,boolean)
+com.purplebrain.adbuddiz.sdk.f.d$a: com.purplebrain.adbuddiz.sdk.f.d$a[] l
+com.purplebrain.adbuddiz.sdk.f.d$a: d$a(java.lang.String,int,java.lang.String)
+com.purplebrain.adbuddiz.sdk.f.e: com.purplebrain.adbuddiz.sdk.f.e[] f
+com.purplebrain.adbuddiz.sdk.f.e: e(java.lang.String,int,java.lang.String,java.lang.String)
+com.purplebrain.adbuddiz.sdk.g.d: java.lang.String f
+com.purplebrain.adbuddiz.sdk.g.d: int g
+com.purplebrain.adbuddiz.sdk.g.d: com.purplebrain.adbuddiz.sdk.g.d[] h
+com.purplebrain.adbuddiz.sdk.g.d: d(java.lang.String,int,java.lang.String,int)
+com.purplebrain.adbuddiz.sdk.g.e$a: java.lang.String d
+com.purplebrain.adbuddiz.sdk.g.e$a: com.purplebrain.adbuddiz.sdk.g.e$a[] e
+com.purplebrain.adbuddiz.sdk.g.e$a: e$a(java.lang.String,int,java.lang.String)
+com.purplebrain.adbuddiz.sdk.g.f: com.purplebrain.adbuddiz.sdk.g.f[] g
+com.purplebrain.adbuddiz.sdk.g.f: f(java.lang.String,int,java.lang.String)
+com.purplebrain.adbuddiz.sdk.h.i$a: java.lang.String g
+com.purplebrain.adbuddiz.sdk.h.i$a: com.purplebrain.adbuddiz.sdk.h.i$a[] h
+com.purplebrain.adbuddiz.sdk.h.i$a: i$a(java.lang.String,int,java.lang.String,com.purplebrain.adbuddiz.sdk.AdBuddizError,com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError)
+com.purplebrain.adbuddiz.sdk.i.a.l$a: com.purplebrain.adbuddiz.sdk.i.a.l$a[] d
+com.purplebrain.adbuddiz.sdk.i.a.l$a: l$a(java.lang.String,int,java.lang.String)
+com.purplebrain.adbuddiz.sdk.i.a.m: com.purplebrain.adbuddiz.sdk.i.a.m[] h
+com.purplebrain.adbuddiz.sdk.i.a.m: m(java.lang.String,int,double,double,int)
+com.purplebrain.adbuddiz.sdk.j.a.a: com.purplebrain.adbuddiz.sdk.j.a.a[] k
+com.purplebrain.adbuddiz.sdk.j.a.a: a(java.lang.String,int,int)
+com.purplebrain.adbuddiz.sdk.j.a.b: b(com.purplebrain.adbuddiz.sdk.j.a.a,java.util.List,java.lang.Throwable)
+com.purplebrain.adbuddiz.sdk.j.a.b: b(com.purplebrain.adbuddiz.sdk.j.a.a,java.util.List,java.lang.String)
+com.purplebrain.adbuddiz.sdk.j.a.b: java.lang.String a(com.purplebrain.adbuddiz.sdk.j.a.a,java.lang.String)
+com.purplebrain.adbuddiz.sdk.j.b.a.b: int[] c
+com.purplebrain.adbuddiz.sdk.j.b.b.c: int[] d
+com.purplebrain.adbuddiz.sdk.j.b.b.d: java.util.List x
+com.purplebrain.adbuddiz.sdk.j.b.b.d: com.purplebrain.adbuddiz.sdk.j.b.b.d[] y
+com.purplebrain.adbuddiz.sdk.j.b.b.d: d(java.lang.String,int,java.lang.String,java.lang.String[])
+com.purplebrain.adbuddiz.sdk.j.b.b.g: java.lang.String d
+com.purplebrain.adbuddiz.sdk.j.b.b.g: com.purplebrain.adbuddiz.sdk.j.b.b.g[] e
+com.purplebrain.adbuddiz.sdk.j.b.b.g: g(java.lang.String,int,java.lang.String)
+org.xeustechnologies.jtar.Octal
+org.xeustechnologies.jtar.TarConstants
+org.xeustechnologies.jtar.TarEntry
+org.xeustechnologies.jtar.TarHeader
+org.xeustechnologies.jtar.TarInputStream
+org.xeustechnologies.jtar.TarOutputStream
+org.xeustechnologies.jtar.TarUtils

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string name="app_name">OCR eKTP</string>
+    <string name="touched.image.shown">Touched image will be shown</string>
+    <string name="ocr.reads.no.valid.data">OCR reads no valid data</string>
+    <string name="waiting.ocr.reading">Waiting for OCR reading...</string>
+    <string name="downloading.fonts">Downloading data for eKTP font...</string>
+    <string name="data.uncompressing">Uncompressing data of eKTP fonts...</string>
+    <string name="network.unreachable">"Network is unreachable then system unable to download fonts"</string>
+    <string name="internet.pls.enable">Please enable network access and restart this app.</string>
+</resources>
