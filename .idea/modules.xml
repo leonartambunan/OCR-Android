@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PermissionEverywhere-master/library/src/main/PermissionEverywhere.iml" filepath="$PROJECT_DIR$/../PermissionEverywhere-master/library/src/main/PermissionEverywhere.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-ocr-master/android/android.iml" filepath="$PROJECT_DIR$/android-ocr-master/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tess-twoo/tess-twoo.iml" filepath="$PROJECT_DIR$/tess-twoo/tess-twoo.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,522 @@
+com.googlecode.leptonica.android.AdaptiveMap:
+    private static final int NORM_REDUCTION
+    private static final int NORM_SIZE
+    private static final int NORM_BG_VALUE
+    public static final int DEFAULT_TILE_WIDTH
+    public static final int DEFAULT_TILE_HEIGHT
+    public static final int DEFAULT_MIN_COUNT
+    public static final int DEFAULT_X_SMOOTH_SIZE
+    public static final int DEFAULT_Y_SMOOTH_SIZE
+    62:62:public static com.googlecode.leptonica.android.Pix backgroundNormMorph(com.googlecode.leptonica.android.Pix)
+    103:112:public static com.googlecode.leptonica.android.Pix backgroundNormMorph(com.googlecode.leptonica.android.Pix,int,int,int)
+    125:125:public static com.googlecode.leptonica.android.Pix pixContrastNorm(com.googlecode.leptonica.android.Pix)
+    168:177:public static com.googlecode.leptonica.android.Pix pixContrastNorm(com.googlecode.leptonica.android.Pix,int,int,int,int,int)
+    private static native long nativeBackgroundNormMorph(long,int,int,int)
+    private static native long nativePixContrastNorm(long,int,int,int,int,int)
+com.googlecode.leptonica.android.Binarize:
+    public static final int OTSU_SIZE_X
+    public static final int OTSU_SIZE_Y
+    public static final int OTSU_SMOOTH_X
+    public static final int OTSU_SMOOTH_Y
+    public static final float OTSU_SCORE_FRACTION
+    public static final int SAUVOLA_DEFAULT_WINDOW_HALFWIDTH
+    public static final float SAUVOLA_DEFAULT_REDUCTION_FACTOR
+    public static final int SAUVOLA_DEFAULT_NUM_TILES_X
+    public static final int SAUVOLA_DEFAULT_NUM_TILES_Y
+    68:68:public static com.googlecode.leptonica.android.Pix otsuAdaptiveThreshold(com.googlecode.leptonica.android.Pix)
+    146:146:public static com.googlecode.leptonica.android.Pix sauvolaBinarizeTiled(com.googlecode.leptonica.android.Pix)
+    153:164:public static com.googlecode.leptonica.android.Pix sauvolaBinarizeTiled(com.googlecode.leptonica.android.Pix,int,float,int,int)
+    private static native long nativeSauvolaBinarizeTiled(long,int,float,int,int)
+com.googlecode.leptonica.android.Box:
+    public static final int INDEX_X
+    public static final int INDEX_Y
+    public static final int INDEX_W
+    public static final int INDEX_H
+    62:65:Box(long)
+    76:89:public Box(int,int,int,int)
+    97:100:public long getNativeBox()
+    109:112:public int getX()
+    121:124:public int getY()
+    133:136:public int getWidth()
+    145:148:public int getHeight()
+    158:163:public android.graphics.Rect getRect()
+    173:179:public int[] getGeometry()
+    190:197:public boolean getGeometry(int[])
+    private static native long nativeCreate(int,int,int,int)
+    private static native int nativeGetX(long)
+    private static native int nativeGetY(long)
+    private static native int nativeGetWidth(long)
+    private static native int nativeGetHeight(long)
+    private static native boolean nativeGetGeometry(long,int[])
+com.googlecode.leptonica.android.Boxa:
+    50:53:public Boxa(long)
+    63:66:public long getNativeBoxa()
+    70:73:public int getCount()
+    84:89:public android.graphics.Rect getRect(int)
+    100:109:public int[] getGeometry(int)
+    121:128:public boolean getGeometry(int,int[])
+    private static native boolean nativeGetGeometry(long,int,int[])
+    private static native int nativeGetCount(long)
+com.googlecode.leptonica.android.Clip:
+    30:35:public static com.googlecode.leptonica.android.Pix clipRectangle(com.googlecode.leptonica.android.Pix,com.googlecode.leptonica.android.Box)
+    private static native int nativeClipRectangle(long,long)
+com.googlecode.leptonica.android.Constants:
+    public static final int L_INSERT
+    public static final int L_COPY
+    public static final int L_CLONE
+    public static final int L_COPY_CLONE
+    public static final int L_SORT_INCREASING
+    public static final int L_SORT_DECREASING
+    public static final int L_SORT_BY_X
+    public static final int L_SORT_BY_Y
+    public static final int L_SORT_BY_WIDTH
+    public static final int L_SORT_BY_HEIGHT
+    public static final int L_SORT_BY_MIN_DIMENSION
+    public static final int L_SORT_BY_MAX_DIMENSION
+    public static final int L_SORT_BY_PERIMETER
+    public static final int L_SORT_BY_AREA
+    public static final int L_SORT_BY_ASPECT_RATIO
+    public static final int IFF_UNKNOWN
+    public static final int IFF_BMP
+    public static final int IFF_JFIF_JPEG
+    public static final int IFF_PNG
+    public static final int IFF_TIFF
+    public static final int IFF_TIFF_PACKBITS
+    public static final int IFF_TIFF_RLE
+    public static final int IFF_TIFF_G3
+    public static final int IFF_TIFF_G4
+    public static final int IFF_TIFF_LZW
+    public static final int IFF_TIFF_ZIP
+    public static final int IFF_PNM
+    public static final int IFF_PS
+    public static final int IFF_GIF
+    public static final int IFF_JP2
+    public static final int IFF_DEFAULT
+    public static final int IFF_SPIX
+com.googlecode.leptonica.android.Convert:
+    38:46:public static com.googlecode.leptonica.android.Pix convertTo8(com.googlecode.leptonica.android.Pix)
+    private static native long nativeConvertTo8(long)
+com.googlecode.leptonica.android.Edge:
+    public static final int L_HORIZONTAL_EDGES
+    public static final int L_VERTICAL_EDGES
+    public static final int L_ALL_EDGES
+    43:56:public static com.googlecode.leptonica.android.Pix pixSobelEdgeFilter(com.googlecode.leptonica.android.Pix,int)
+    private static native long nativePixSobelEdgeFilter(long,int)
+com.googlecode.leptonica.android.Enhance:
+    public static final int DEFAULT_UNSHARP_HALFWIDTH
+    public static final float DEFAULT_UNSHARP_FRACTION
+    47:47:public static com.googlecode.leptonica.android.Pix unsharpMasking(com.googlecode.leptonica.android.Pix)
+    70:80:public static com.googlecode.leptonica.android.Pix unsharpMasking(com.googlecode.leptonica.android.Pix,int,float)
+    private static native long nativeUnsharpMasking(long,int,float)
+com.googlecode.leptonica.android.GrayQuant:
+    40:56:public static com.googlecode.leptonica.android.Pix pixThresholdToBinary(com.googlecode.leptonica.android.Pix,int)
+    private static native long nativePixThresholdToBinary(long,int)
+com.googlecode.leptonica.android.JpegIO:
+    public static final int DEFAULT_QUALITY
+    public static final boolean DEFAULT_PROGRESSIVE
+    52:52:public static byte[] compressToJpeg(com.googlecode.leptonica.android.Pix)
+    64:82:public static byte[] compressToJpeg(com.googlecode.leptonica.android.Pix,int,boolean)
+    private static native byte[] nativeCompressToJpeg(long,int,boolean)
+com.googlecode.leptonica.android.MorphApp:
+    public static final int L_TOPHAT_WHITE
+    public static final int L_TOPHAT_BLACK
+    public static final int DEFAULT_WIDTH
+    public static final int DEFAULT_HEIGHT
+    59:74:public static com.googlecode.leptonica.android.Pix pixTophat(com.googlecode.leptonica.android.Pix,int,int,int)
+    87:87:public static com.googlecode.leptonica.android.Pix pixFastTophatBlack(com.googlecode.leptonica.android.Pix)
+    100:100:public static com.googlecode.leptonica.android.Pix pixFastTophatWhite(com.googlecode.leptonica.android.Pix)
+    105:120:public static com.googlecode.leptonica.android.Pix pixFastTophat(com.googlecode.leptonica.android.Pix,int,int,int)
+    private static native long nativePixTophat(long,int,int,int)
+    private static native long nativePixFastTophat(long,int,int,int)
+com.googlecode.leptonica.android.Pix:
+    public static final int INDEX_W
+    public static final int INDEX_H
+    public static final int INDEX_D
+    58:68:public Pix(int,int,int)
+    90:99:public byte[] getData()
+    162:171:public com.googlecode.leptonica.android.Pix copy()
+    180:183:public boolean invert()
+    208:214:public static com.googlecode.leptonica.android.Pix createFromPix(byte[],int,int,int)
+    223:226:public android.graphics.Rect getRect()
+    235:238:public int getWidth()
+    247:250:public int getHeight()
+    266:266:public int getRefCount()
+    279:288:public int getPixel(int,int)
+    301:311:public void setPixel(int,int,int)
+    private static native int nativeGetRefCount(long)
+    private static native long nativeCreatePix(int,int,int)
+    private static native long nativeCreateFromData(byte[],int,int,int)
+    private static native byte[] nativeGetData(long)
+    private static native long nativeCopy(long)
+    private static native boolean nativeInvert(long)
+    private static native int nativeGetWidth(long)
+    private static native int nativeGetHeight(long)
+    private static native int nativeGetPixel(long,int,int)
+    private static native void nativeSetPixel(long,int,int,int)
+com.googlecode.leptonica.android.Pixa:
+    61:61:public static com.googlecode.leptonica.android.Pixa createPixa(int)
+    77:83:public static com.googlecode.leptonica.android.Pixa createPixa(int,int,int)
+    106:109:public long getNativePixa()
+    119:128:public com.googlecode.leptonica.android.Pixa copy()
+    142:151:public com.googlecode.leptonica.android.Pixa sort(int,int)
+    201:204:public boolean join(com.googlecode.leptonica.android.Pixa)
+    215:219:public void addPix(com.googlecode.leptonica.android.Pix,int)
+    229:233:public void addBox(com.googlecode.leptonica.android.Box,int)
+    244:248:public void add(com.googlecode.leptonica.android.Pix,com.googlecode.leptonica.android.Box,int)
+    257:266:public com.googlecode.leptonica.android.Box getBox(int)
+    296:299:public int getWidth()
+    310:313:public int getHeight()
+    323:326:public android.graphics.Rect getRect()
+    337:346:public int[] getBoxGeometry(int)
+    372:383:public android.graphics.Rect getBoxRect(int)
+    421:426:public void replacePix(int,com.googlecode.leptonica.android.Pix,com.googlecode.leptonica.android.Box)
+    437:441:public void mergeAndReplacePix(int,int)
+    451:454:public boolean writeToFileRandomCmap(java.io.File)
+    private static native int nativeCreate(int)
+    private static native int nativeCopy(long)
+    private static native int nativeSort(long,int,int)
+    private static native boolean nativeJoin(long,long)
+    private static native void nativeAddPix(long,long,int)
+    private static native void nativeAddBox(long,long,int)
+    private static native void nativeAdd(long,long,long,int)
+    private static native boolean nativeWriteToFileRandomCmap(long,java.lang.String,int,int)
+    private static native void nativeReplacePix(long,int,long,long)
+    private static native void nativeMergeAndReplacePix(long,int,int)
+    private static native long nativeGetBox(long,int)
+com.googlecode.leptonica.android.ReadFile:
+    47:61:public static com.googlecode.leptonica.android.Pix readMem(byte[])
+    73:87:public static com.googlecode.leptonica.android.Pix readBytes8(byte[],int,int)
+    101:116:public static boolean replaceBytes8(com.googlecode.leptonica.android.Pix,byte[],int,int)
+    private static native long nativeReadMem(byte[],int)
+    private static native long nativeReadBytes8(byte[],int,int)
+    private static native boolean nativeReplaceBytes8(long,byte[],int,int)
+com.googlecode.leptonica.android.Rotate:
+    public static final boolean ROTATE_QUALITY
+    43:43:public static com.googlecode.leptonica.android.Pix rotate(com.googlecode.leptonica.android.Pix,float)
+    55:55:public static com.googlecode.leptonica.android.Pix rotate(com.googlecode.leptonica.android.Pix,float,boolean)
+    105:115:public static com.googlecode.leptonica.android.Pix rotateOrth(com.googlecode.leptonica.android.Pix,int)
+    private static native int nativeRotateOrth(long,int)
+com.googlecode.leptonica.android.Scale:
+    62:87:public static com.googlecode.leptonica.android.Pix scaleToSize(com.googlecode.leptonica.android.Pix,int,int,com.googlecode.leptonica.android.Scale$ScaleType)
+    99:99:public static com.googlecode.leptonica.android.Pix scale(com.googlecode.leptonica.android.Pix,float)
+    110:115:public static com.googlecode.leptonica.android.Pix scaleWithoutSharpening(com.googlecode.leptonica.android.Pix,float)
+    129:141:public static com.googlecode.leptonica.android.Pix scale(com.googlecode.leptonica.android.Pix,float,float)
+    private static native long nativeScale(long,float,float)
+    private static native long nativeScaleGeneral(long,float,float,float,int)
+com.googlecode.leptonica.android.Scale$1
+com.googlecode.leptonica.android.Skew:
+    public static final float SWEEP_RANGE
+    public static final float SWEEP_DELTA
+    public static final int SWEEP_REDUCTION
+    public static final int SEARCH_REDUCTION
+    public static final float SEARCH_MIN_DELTA
+com.googlecode.leptonica.android.WriteFile:
+    41:56:public static byte[] writeBytes8(com.googlecode.leptonica.android.Pix)
+    68:76:public static int writeBytes8(com.googlecode.leptonica.android.Pix,byte[])
+    93:98:public static boolean writeImpliedFormat(com.googlecode.leptonica.android.Pix,java.io.File)
+    private static native int nativeWriteBytes8(long,byte[])
+    private static native boolean nativeWriteImpliedFormat(long,java.lang.String)
+com.googlecode.tesseract.android.BuildConfig:
+    public static final boolean DEBUG
+com.googlecode.tesseract.android.PageIterator:
+    42:43:public void begin()
+    64:64:public boolean next(int)
+    69:69:public int[] getBoundingBox(int)
+    81:82:public android.graphics.Rect getBoundingRect(int)
+    private static native void nativeBegin(long)
+    private static native boolean nativeNext(long,int)
+    private static native int[] nativeBoundingBox(long,int)
+com.googlecode.tesseract.android.ResultIterator:
+    58:58:public java.lang.String getUTF8Text(int)
+    69:69:public float confidence(int)
+    84:114:public java.util.List getChoicesAndConfidence(int)
+    121:122:public void delete()
+    private static native java.lang.String[] nativeGetChoices(long,int)
+    private static native java.lang.String nativeGetUTF8Text(long,int)
+    private static native float nativeConfidence(long,int)
+    private static native void nativeDelete(long)
+com.googlecode.tesseract.android.TessBaseAPI$PageIteratorLevel:
+    public static final int RIL_BLOCK
+    public static final int RIL_PARA
+    public static final int RIL_TEXTLINE
+    public static final int RIL_WORD
+    public static final int RIL_SYMBOL
+com.googlecode.tesseract.android.TessBaseAPI$PageSegMode:
+    public static final int PSM_OSD_ONLY
+    public static final int PSM_AUTO_OSD
+    public static final int PSM_AUTO_ONLY
+    public static final int PSM_AUTO
+    public static final int PSM_SINGLE_COLUMN
+    public static final int PSM_SINGLE_BLOCK_VERT_TEXT
+    public static final int PSM_SINGLE_BLOCK
+    public static final int PSM_SINGLE_LINE
+    public static final int PSM_SINGLE_WORD
+    public static final int PSM_CIRCLE_WORD
+    public static final int PSM_SINGLE_CHAR
+    public static final int PSM_SPARSE_TEXT
+    public static final int PSM_SPARSE_TEXT_OSD
+    public static final int PSM_COUNT
+com.googlecode.tesseract.android.TessBaseAPI$ProgressValues:
+    185:185:public int getPercent()
+    197:197:public android.graphics.Rect getCurrentWordRect()
+    210:210:public android.graphics.Rect getCurrentRect()
+com.googlecode.tesseract.android.TessPdfRenderer:
+    48:51:public TessPdfRenderer(com.googlecode.tesseract.android.TessBaseAPI,java.lang.String)
+    68:70:public void recycle()
+    private static native long nativeCreate(long,java.lang.String)
+    private static native void nativeRecycle(long)
+com.nio.ocr.ektp.mobile.BeepManager:
+    private static final float BEEP_VOLUME
+    86:89:public void releaseMediaPlayer()
+com.nio.ocr.ektp.mobile.BuildConfig
+com.nio.ocr.ektp.mobile.CaptureActivity:
+    private static final java.lang.String TAG
+    private static final boolean CONTINUOUS_DISPLAY_METADATA
+    private static final boolean DISPLAY_SHUTTER_BUTTON
+    private static final int SETTINGS_ID
+    private static final int OPTIONS_COPY_RECOGNIZED_TEXT_ID
+    private static final int OPTIONS_SHARE_RECOGNIZED_TEXT_ID
+    private static final java.lang.String sourceLanguageCodeOcr
+    private static final java.lang.String sourceLanguageReadable
+    private static final int pageSegmentationMode
+    private static final int ocrEngineMode
+    1218:1245:private void doSave(android.graphics.Bitmap)
+    1249:1273:private void save(android.graphics.Bitmap)
+com.nio.ocr.ektp.mobile.CaptureActivityHandler:
+    private static final java.lang.String TAG
+    185:187:private void ocrDecode()
+    194:197:void hardwareShutterButtonClick()
+    204:206:void shutterButtonClick()
+com.nio.ocr.ektp.mobile.Constants:
+    public static final java.lang.String TAG
+    static final java.lang.String BLACKLIST_CHARS
+    static final java.lang.String WHITELIST_CHARS
+    static final java.lang.String DOWNLOAD_BASE
+    static final java.lang.String SAVED_IMAGE_LOC
+    public static final int PERMISSIONS_REQUEST_CAMERA
+    public static final int PERMISSIONS_REQUEST_STORAGE
+    public static final int MIN_FRAME_WIDTH
+    public static final int MIN_FRAME_HEIGHT
+    public static final int MAX_FRAME_WIDTH
+    public static final int MAX_FRAME_HEIGHT
+    static final java.lang.String PROVINCE_PATTERN
+    static final java.lang.String KABUPATEN_PATTERN
+    static final java.lang.String KOTA_PATTERN
+    static final java.lang.String NIK_PATTERN
+    static final java.lang.String NAME_PATTERN
+    static final java.lang.String BIRTH_PLACE_PATTERN
+    static final java.lang.String BIRTH_DAY_PATTERN
+    static final java.lang.String SEX_PATTERN
+    static final java.lang.String ADDRESS_PATTERN
+    static final java.lang.String BLOOD_TYPE_PATTERN
+    static final java.lang.String RTRW_PATTERN
+    static final java.lang.String DESA_PATTERN
+    static final java.lang.String RELIGION_PATTERN
+    static final java.lang.String CITIZENSHIP_PATTERN
+    static final java.lang.String JOB_PATTERN
+    static final java.lang.String MARITAL_STATUS_PATTERN
+    static final java.lang.String EXPIRED_DATE
+    static final java.lang.String KARYAWAN_SWASTA_PATTERN
+    static final java.lang.String PELAJAR_PATTERN
+    static final java.lang.String KRISTEN_PATTERN
+    static final java.lang.String ISLAM_PATTERN
+    static final java.lang.String WNI_PATTERN
+    static final java.lang.String KAWIN_PATTERN
+    static final java.lang.String BELUM_KAWIN_PATTERN
+    static final java.lang.String LAKI_2_PATTERN
+    static final java.lang.String RT_RW_VALUE_PATTERN
+    static final java.lang.String NPWP_PATTERN
+    static final java.lang.String TAX_SUBJECT_NAME_PATTERN
+    static final java.lang.String REGISTERED_DATE_PATTERN
+    static final java.lang.String ISSUER_PATTERN
+    7:7:public Constants()
+com.nio.ocr.ektp.mobile.LuminanceSource:
+    public abstract byte[] getRow(int,byte[])
+    public abstract byte[] getMatrix()
+    63:63:public boolean isCropSupported()
+    77:77:public com.nio.ocr.ektp.mobile.LuminanceSource crop(int,int,int,int)
+    84:84:public boolean isRotateSupported()
+    93:93:public com.nio.ocr.ektp.mobile.LuminanceSource rotateCounterClockwise()
+com.nio.ocr.ektp.mobile.OcrInitAsyncTask:
+    private static final java.lang.String TAG
+com.nio.ocr.ektp.mobile.OcrResult:
+    39:53:public OcrResult(android.graphics.Bitmap,java.lang.String,int[],int,java.util.List,java.util.List,java.util.List,java.util.List,java.util.List,long)
+    128:128:public long getTimestamp()
+    164:165:public void setCharacterBoundingBoxes(java.util.List)
+    168:168:public android.graphics.Bitmap getOriginalBitmap()
+com.nio.ocr.ektp.mobile.OcrResultFailure:
+    12:12:public long getTimestamp()
+com.nio.ocr.ektp.mobile.OcrResultText:
+    41:41:public java.lang.String getText()
+    49:49:public int[] getWordConfidences()
+    53:53:public int getMeanConfidence()
+    57:57:public java.util.List getRegionBoundingBoxes()
+    65:65:public java.util.List getStripBoundingBoxes()
+    73:73:public java.util.List getCharacterBoundingBoxes()
+com.nio.ocr.ektp.mobile.PlanarYUVLuminanceSource:
+    49:58:public byte[] getRow(int,byte[])
+    63:89:public byte[] getMatrix()
+    94:94:public boolean isCropSupported()
+    99:99:public com.nio.ocr.ektp.mobile.LuminanceSource crop(int,int,int,int)
+com.nio.ocr.ektp.mobile.PreferencesActivity:
+    public static final java.lang.String KEY_HELP_VERSION_SHOWN
+com.nio.ocr.ektp.mobile.R
+com.nio.ocr.ektp.mobile.R$array
+com.nio.ocr.ektp.mobile.R$attr
+com.nio.ocr.ektp.mobile.R$color
+com.nio.ocr.ektp.mobile.R$drawable
+com.nio.ocr.ektp.mobile.R$id
+com.nio.ocr.ektp.mobile.R$layout
+com.nio.ocr.ektp.mobile.R$raw
+com.nio.ocr.ektp.mobile.R$string
+com.nio.ocr.ektp.mobile.R$styleable
+com.nio.ocr.ektp.mobile.R$xml
+com.nio.ocr.ektp.mobile.ViewfinderView:
+    static final boolean DRAW_REGION_BOXES
+    static final boolean DRAW_TEXT_LINE_BOXES
+    static final boolean DRAW_STRIP_BOXES
+    static final boolean DRAW_WORD_BOXES
+    static final boolean DRAW_TRANSPARENT_WORD_BACKGROUNDS
+    static final boolean DRAW_WORD_TEXT
+    private java.lang.String[] words
+    private java.util.List regionBoundingBoxes
+    private java.util.List stripBoundingBoxes
+    private java.util.List characterBoundingBoxes
+com.nio.ocr.ektp.mobile.camera.AutoFocusManager:
+    private static final long AUTO_FOCUS_INTERVAL_MS
+com.nio.ocr.ektp.mobile.camera.CameraConfigurationManager:
+    private static final java.lang.String TAG
+    private static final int MIN_PREVIEW_PIXELS
+    private static final int MAX_PREVIEW_PIXELS
+com.nio.ocr.ektp.mobile.db.DBHelper:
+    private static final java.lang.String DB_Name
+    public static final int DB_VERSION
+    private static final java.lang.String CREATE_TABLE_Provinsi
+    private static final java.lang.String CREATE_TABLE_kabupaten
+    private static final java.lang.String CREATE_TABLE_kecamatan
+    private static final java.lang.String CREATE_TABLE_config
+    125:139:public java.lang.String getOcrDataVersion()
+    145:150:public void updateOCRDataVersion(java.lang.String)
+com.nio.ocr.ektp.mobile.model.NPWPModel
+com.purplebrain.adbuddiz.sdk.AdBuddiz:
+    private AdBuddiz()
+    public static synchronized void setLogLevel(com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel)
+    public static synchronized void setPublisherKey(java.lang.String)
+    public static synchronized void setTestModeActive()
+    public static synchronized void cacheAds(android.app.Activity)
+    public static synchronized boolean isReadyToShowAd(android.app.Activity)
+    public static synchronized boolean isReadyToShowAd(android.app.Activity,java.lang.String)
+    public static synchronized void showAd(android.app.Activity,java.lang.String)
+    public static synchronized void onDestroy()
+    public static void setDelegate(com.purplebrain.adbuddiz.sdk.AdBuddizDelegate)
+com.purplebrain.adbuddiz.sdk.AdBuddiz$RewardedVideo:
+    public AdBuddiz$RewardedVideo()
+    public static synchronized void fetch(android.app.Activity)
+    public static synchronized boolean isReadyToShow(android.app.Activity)
+    public static synchronized void show(android.app.Activity)
+    public static void setDelegate(com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoDelegate)
+    public static void setUserId(java.lang.String)
+com.purplebrain.adbuddiz.sdk.AdBuddizActivity:
+    public static final java.lang.String EXTRA_AD
+    public static final java.lang.String EXTRA_PLACEMENT
+    public static final java.lang.String EXTRA_FULLSCREEN
+    public static final java.lang.String EXTRA_WITHOUT_TITLE
+    public static final java.lang.String EXTRA_SYSTEM_UI_FLAGS
+    public static final java.lang.String EXTRA_STATUS_BAR_COLOR
+    public static final java.lang.String EXTRA_NAVIGATION_BAR_COLOR
+com.purplebrain.adbuddiz.sdk.c.a:
+    public final synchronized boolean a(android.content.Context,java.lang.String)
+com.purplebrain.adbuddiz.sdk.c.b:
+    public final synchronized boolean a(android.content.Context)
+    public static void b(android.content.Context)
+    private static void e(android.content.Context)
+    private static com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError f(android.content.Context)
+    private static boolean b(com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError)
+    public final void c(android.content.Context)
+    public static void a(com.purplebrain.adbuddiz.sdk.f.d,com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError,java.lang.String)
+    static synthetic com.purplebrain.adbuddiz.sdk.i.p b()
+    static synthetic com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError d(android.content.Context)
+    static synthetic boolean a(com.purplebrain.adbuddiz.sdk.AdBuddizRewardedVideoError)
+    static synthetic android.content.Context a(com.purplebrain.adbuddiz.sdk.c.b)
+com.purplebrain.adbuddiz.sdk.c.b$1
+com.purplebrain.adbuddiz.sdk.c.b$2
+com.purplebrain.adbuddiz.sdk.c.b$3
+com.purplebrain.adbuddiz.sdk.h.b:
+    public static void h()
+com.purplebrain.adbuddiz.sdk.i.j:
+    public j()
+com.purplebrain.adbuddiz.sdk.i.o:
+    public static void a(com.purplebrain.adbuddiz.sdk.AdBuddizLogLevel)
+com.purplebrain.adbuddiz.sdk.i.p:
+    public final void e()
+    public final boolean i()
+com.purplebrain.adbuddiz.sdk.i.q:
+    public static void a(java.lang.String)
+com.purplebrain.adbuddiz.sdk.i.u:
+    public static void a()
+com.purplebrain.adbuddiz.sdk.i.x:
+    public static void a(java.lang.String)
+org.xeustechnologies.jtar.Octal:
+    78:99:public static int getOctalBytes(long,byte[],int,int)
+    115:118:public static int getCheckSumOctalBytes(long,byte[],int,int)
+    135:138:public static int getLongOctalBytes(long,byte[],int,int)
+org.xeustechnologies.jtar.TarConstants:
+    public static final int EOF_BLOCK
+    public static final int DATA_BLOCK
+    public static final int HEADER_BLOCK
+org.xeustechnologies.jtar.TarEntry:
+    37:40:public TarEntry(java.io.File,java.lang.String)
+    48:48:public boolean equals(org.xeustechnologies.jtar.TarEntry)
+    52:52:public boolean isDescendent(org.xeustechnologies.jtar.TarEntry)
+    56:56:public org.xeustechnologies.jtar.TarHeader getHeader()
+    64:65:public void setName(java.lang.String)
+    68:68:public int getUserId()
+    72:73:public void setUserId(int)
+    76:76:public int getGroupId()
+    80:81:public void setGroupId(int)
+    84:84:public java.lang.String getUserName()
+    88:89:public void setUserName(java.lang.String)
+    92:92:public java.lang.String getGroupName()
+    96:97:public void setGroupName(java.lang.String)
+    100:102:public void setIds(int,int)
+    105:106:public void setModTime(long)
+    109:110:public void setModTime(java.util.Date)
+    113:113:public java.util.Date getModTime()
+    117:117:public java.io.File getFile()
+    125:126:public void setSize(long)
+    154:180:public void extractTarHeader(java.lang.String)
+    189:195:public long computeCheckSum(byte[])
+    204:235:public void writeEntryHeader(byte[])
+org.xeustechnologies.jtar.TarHeader:
+    public static final int NAMELEN
+    public static final int MODELEN
+    public static final int UIDLEN
+    public static final int GIDLEN
+    public static final int SIZELEN
+    public static final int MODTIMELEN
+    public static final int CHKSUMLEN
+    public static final byte LF_OLDNORM
+    public static final byte LF_NORMAL
+    public static final byte LF_LINK
+    public static final byte LF_SYMLINK
+    public static final byte LF_CHR
+    public static final byte LF_BLK
+    public static final byte LF_DIR
+    public static final byte LF_FIFO
+    public static final byte LF_CONTIG
+    public static final int MAGICLEN
+    public static final java.lang.String TMAGIC
+    public static final java.lang.String GNU_TMAGIC
+    public static final int UNAMELEN
+    public static final int GNAMELEN
+    public static final int DEVLEN
+    186:194:public static int getNameBytes(java.lang.StringBuffer,byte[],int,int)
+org.xeustechnologies.jtar.TarInputStream:
+    private static final int SKIP_BUFFER_SIZE
+org.xeustechnologies.jtar.TarOutputStream:
+    34:37:public TarOutputStream(java.io.OutputStream)
+    91:99:public void putNextEntry(org.xeustechnologies.jtar.TarEntry)
+org.xeustechnologies.jtar.TarUtils:
+    34:34:public static long calculateTarSize(java.io.File)
+    38:59:private static long tarSize(java.io.File)
+    63:73:private static long entrySize(long)
